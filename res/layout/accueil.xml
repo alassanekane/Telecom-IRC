@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fond"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btn_salon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/salon_ico" />
+
+    <ImageButton
+        android:id="@+id/btn_contact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btn_salon"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/btn_salon"
+        android:src="@drawable/contact_ico" />
+
+    <ImageButton
+        android:id="@+id/btn_reglage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btn_salon"
+        android:layout_below="@+id/btn_salon"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/reglage_ico" />
+
+    <ImageButton
+        android:id="@+id/btn_profil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btn_contact"
+        android:layout_alignTop="@+id/btn_reglage"
+        android:src="@drawable/profil_ico" />
+
+    <TextView
+        android:id="@+id/textView_salon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_salon"
+        android:layout_below="@+id/btn_salon"
+        android:layout_marginLeft="26dp"
+        android:text="@string/textView_salon"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_salon"
+        android:layout_alignBottom="@+id/textView_salon"
+        android:layout_alignRight="@+id/btn_contact"
+        android:layout_marginRight="18dp"
+        android:text="@string/textView_contact"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_reglage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@+id/btn_reglage"
+        android:text="@string/textView_reglage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_alignBaseline="@+id/textView_reglage"
+        android:layout_alignBottom="@+id/textView_reglage"
+        android:layout_alignLeft="@+id/textView_contact"
+        android:text="@string/textView_profil"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+    

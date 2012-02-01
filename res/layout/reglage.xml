@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fond"
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+  
+    <TextView
+        android:id="@+id/textView_titre_reglage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/textView_titre_reglage"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/salon_nomSalon" />
+
+	<RelativeLayout
+	    android:id="@+id/relativeLayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="250dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:background="#FFF"
+	    android:paddingLeft="20dp" >
+
+	    <ToggleButton
+	        android:id="@+id/toggleButton_reglage_vibration"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:text="ToggleButton" />
+
+	    <TextView
+	        android:id="@+id/textView_reglage_vibration"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="@string/textView_reglage_vibration"
+	        android:textAppearance="@style/profil_champ" />
+
+	    <TextView
+	        android:id="@+id/textView_reglage_son"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView_reglage_vibration"
+	        android:layout_marginBottom="24dp"
+	        android:layout_marginTop="24dp"
+	        android:text="@string/textView_regle_son"
+	        android:textAppearance="@style/profil_champ" />
+
+	    <SeekBar
+	        android:id="@+id/seekBar_reglage_son"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/toggleButton_reglage_vibration"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="21dp"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp" />
+
+	    <Button
+	        android:id="@+id/button_reglage_valide"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="24dp"
+	        android:layout_toLeftOf="@+id/toggleButton_reglage_vibration"
+	        android:text="@string/reglage_valide" />
+
+	    <Button
+	        android:id="@+id/button_reglage_annule"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button_reglage_valide"
+	        android:layout_alignBottom="@+id/button_reglage_valide"
+	        android:layout_toRightOf="@+id/toggleButton_reglage_vibration"
+	        android:text="@string/reglage_annule" />
+	</RelativeLayout>
+
+    </RelativeLayout>

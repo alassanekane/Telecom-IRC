@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   	<style name="WindowTitleBackground" >
+   	        <item name="android:background">@android:color/transparent</item>        
+   	</style>
+   	<style name="MyTheme" parent="android:Theme">
+		<item name="android:windowTitleSize">70px</item>
+		<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>  		
+	</style>
+   	
+    <style name="StyleTxt" parent="@android:style/TextAppearance">
+	        <item name="android:textColor">@color/textColor</item>
+	        <item name="android:textSize">@dimen/textSize</item>
+	        <item name="android:textStyle">italic</item>
+	        <item name="android:typeface">serif</item>
+    </style>
+    
+    <style name="salon_nomSalon" parent="StyleTxt">
+        <item name="android:textSize">@dimen/TitrePage</item>
+    </style>
+    
+    <style name="profil_champ" parent="StyleTxt">
+        <item name="android:textSize">@dimen/profil_champ</item>
+	    <item name="android:textColor">@color/noir</item>
+    </style>
+    
+</resources>

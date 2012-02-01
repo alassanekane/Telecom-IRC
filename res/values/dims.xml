@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">18dp</dimen>
+    <dimen name="layoutMarginTop">30dp</dimen>
+    <dimen name="TitrePage">25dp</dimen>
+    <dimen name="profil_champ">20dp</dimen>
+</resources>

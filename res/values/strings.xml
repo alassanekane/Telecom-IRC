@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    <string name="hello">Hello World, TelecomIRCActivity!</string>
+    <string name="app_name">TelecomIRC</string>
+    
+    <!-- Page de connexion -->
+    <string name="connexion_User">User</string>
+    <string name="connexion_Passeword">Password</string>
+    <string name="btn_connexion">Connexion</string>
+    <string name="copyright">copyright - Alassane KANE &amp; Jeremy SFEZ</string>
+    <string name="btn_admin"><u>Contactez-nous</u></string>
+    
+    <!--  Page Accueil -->
+    <string name="textView_salon">Salon</string>
+    <string name="textView_contact">Contact</string>
+    <string name="textView_profil">Profil</string>
+    <string name="textView_reglage">Réglage</string>
+    
+    <!-- Page Reglage  -->
+    <string name="textView_regle_son">Son :</string>
+    <string name="textView_reglage_vibration">Vibreur :</string>
+    <string name="reglage_valide">Valider</string>
+    <string name="reglage_annule">Annuler</string>
+    <string name="textView_titre_reglage">Réglage</string>
+    
+    <!-- Page Salon Public -->
+    <string name="salonPublic_messageBienvenue">Salon Principal</string>
+    <string name="boutonEnvoyer">Envoyer</string>
+    
+    <!-- Page de Profil -->
+    <string name="profil_pseudo" style="profil_colorPolice">Pseudo :</string>
+    <string name="profil_nom">Nom :</string>
+    <string name="profil_prenom">Prenom :</string>
+    <string name="profil_mail">Adresse mail :</string>
+    
+    
+</resources>

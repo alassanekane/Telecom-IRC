@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fond"
+    >
+
+        <EditText
+            android:id="@+id/edit_user"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="158dp"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            
+            android:id="@+id/edit_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_user"
+            android:layout_below="@+id/edit_user"
+            android:layout_marginTop="36dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:textAppearance="@style/StyleTxt"
+            android:id="@+id/connexion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edit_password"
+            android:layout_below="@+id/edit_password"
+            android:layout_marginTop="31dp"
+            android:text="@string/btn_connexion"
+            />
+
+        <TextView
+            android:textAppearance="@style/StyleTxt"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_password"
+            android:layout_below="@+id/edit_user"
+            android:layout_marginTop="14dp"
+            android:text="@string/connexion_Passeword" />
+
+        <TextView
+            android:textAppearance="@style/StyleTxt"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_user"
+            android:layout_alignLeft="@+id/edit_user"
+            android:layout_marginBottom="52dp"
+            android:text="@string/connexion_User" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/copyright"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/textView_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_copyright"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            android:textAppearance="@style/StyleTxt"
+            android:text="@string/btn_admin" 
+            android:textStyle="italic"
+            
+            />
+
+</RelativeLayout>

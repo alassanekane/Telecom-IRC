@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/fond"
+	    android:gravity="top"
+	    android:orientation="vertical" >
+	    
+	    <Button
+	        android:id="@+id/lecteurs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:text="Lecteurs"
+	        android:textAppearance="@style/StyleTxt" />
+
+	    <ListView
+	        android:id="@+id/thread"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@+id/message"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/lecteurs"
+	        android:layout_weight="1"
+	        android:background="#000"
+	        android:scrollbars="horizontal"
+	        android:stackFromBottom="true"
+	        android:clickable="false"
+	         >
+
+		</ListView>
+		
+		<EditText
+		    android:id="@+id/message"
+		    android:layout_width="fill_parent"
+		    android:layout_height="57dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_margin="2dp"
+		    android:layout_toLeftOf="@+id/send" />
+
+		<Button
+		    android:id="@+id/send"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignTop="@+id/message"
+		    android:text="@string/boutonEnvoyer"
+		    android:textAppearance="@style/StyleTxt" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/lecteurs"
+		    android:layout_alignBottom="@+id/lecteurs"
+		    android:layout_toRightOf="@+id/lecteurs"
+		    android:text="@string/salonPublic_messageBienvenue"
+		    android:textAppearance="@style/salon_nomSalon" />
+
+	</RelativeLayout>
